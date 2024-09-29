@@ -4,7 +4,7 @@
 	"type": "module",
 	"scripts": {
 		"build": "wxt build",
-		"dev": "wxt dev",
+		"dev": "wxt",
 		"postinstall": "lefthook install && wxt prepare"
 	},
 	"devDependencies": {
