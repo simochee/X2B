@@ -1,0 +1,11 @@
+pre-commit:
+  commands:
+    sort-package-json:
+      glob: package.json
+      run: |-
+        npx sort-package-json {staged_files} \
+        && git update-index --again
+    biome:
+      run: |-
+        npx biome check --apply-unsafe --no-errors-on-unmatched --files-ignore-unknown=true {staged_files} \
+        && git update-index --again
