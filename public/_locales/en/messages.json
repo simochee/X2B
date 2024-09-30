@@ -1,0 +1,6 @@
+{
+	"extName": { "message": "X2B" },
+	"extDescription": {
+		"message": "Redirect X's web intent link to Bluesky's action intent link."
+	}
+}

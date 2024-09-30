@@ -1,0 +1,6 @@
+{
+	"extName": { "message": "X2B" },
+	"extDescription": {
+		"message": "X の Web Intent Link を Bluesky の Action Intent Link にリダイレクトする。"
+	}
+}
