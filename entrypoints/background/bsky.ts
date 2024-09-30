@@ -14,9 +14,13 @@ export const buildBskyIntentUrl = (
 	const bskyUrl = new URL("https://bsky.app/intent/compose");
 	const bskyHashtags = hashtags
 		.split(",")
+		.filter((hashtag) => hashtag.length > 0)
 		.map((hashtag) => `#${hashtag}`)
 		.join(" ");
-	const bskyText = `${text} ${url} ${bskyHashtags}`.trim();
+	const bskyText = [text, url, bskyHashtags]
+		.filter((part) => part.length > 0)
+		.join(" ")
+		.trim();
 
 	if (!bskyText) return;
 

@@ -5,12 +5,14 @@
 	"scripts": {
 		"build": "wxt build",
 		"dev": "wxt",
-		"postinstall": "lefthook install && wxt prepare"
+		"postinstall": "lefthook install && wxt prepare",
+		"test": "vitest"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.9.2",
 		"lefthook": "^1.7.17",
 		"sort-package-json": "^2.10.1",
+		"vitest": "^2.1.1",
 		"wxt": "^0.19.10"
 	}
 }
